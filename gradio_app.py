@@ -65,7 +65,7 @@ if __name__ == "__main__":
         # Image-to-3D
         with gr.Row(variant='panel'):
             with gr.Column(scale=5):
-                image_block = gr.Image(type='pil', image_mode='RGBA', height=290, label='Input image', tool=None)
+                image_block = gr.Image(type='pil', image_mode='RGBA', height=290, label='Input image') #, tool=None)
 
                 elevation_slider = gr.Slider(-90, 90, value=0, step=1, label='Estimated elevation angle')
                 gr.Markdown(
